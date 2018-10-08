@@ -31,4 +31,12 @@ public class SortingTest
 
         assertArrayEquals(expectedAsc, a);
     }
+
+    @Test
+    public void testInsertionSort()
+    {
+        Sorting.insertionSort(a);
+
+        assertArrayEquals(expectedAsc, a);
+    }
 }

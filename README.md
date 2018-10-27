@@ -1,2 +1,2 @@
 # algorithms
-Repository in which I will save examples of the course "Algorithmen und Datenstrukturen"
+This is a project where I implement algorithms and data structures that I learned in the course "Algorithmen und Datenstrukturen"

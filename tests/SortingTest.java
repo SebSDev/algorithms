@@ -1,3 +1,4 @@
+import algorithms.Sorting;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,33 +11,76 @@ import static org.junit.Assert.assertArrayEquals;
  */
 public class SortingTest
 {
-    int[] a = {35, 22, 10, 51, 48};
-    int[] expectedAsc = {10, 22, 35, 48, 51};
-    int[] expectedDesc = {51, 48, 35, 22, 10};
+    // array with random numbers
+    int[] a1 = {35, 22, 10, 51, 48};
+    int[] expectedAsc1 = {10, 22, 35, 48, 51};
+    int[] expectedDesc1 = {51, 48, 35, 22, 10};
+
+    // array with already ascending sorted numbers
+    int[] a2 = {1, 2, 3, 4, 5};
+    int[] expectedAsc2 = {1, 2, 3, 4, 5};
+    int[] expectedDesc2 = {5, 4, 3, 2, 1};
+
+    // array with already descending sorted numbers
+    int[] a3 = {5, 4, 3, 2, 1};
+    int[] expectedAsc3 = {1, 2, 3, 4, 5};
+    int[] expectedDesc3 = {5, 4, 3, 2, 1};
 
     @Before
     public void init()
     {
-        a[0] = 35;
-        a[1] = 22;
-        a[2] = 10;
-        a[3] = 51;
-        a[4] = 48;
+        a1[0] = 35;
+        a1[1] = 22;
+        a1[2] = 10;
+        a1[3] = 51;
+        a1[4] = 48;
+
+        a2[0] = 1;
+        a2[1] = 2;
+        a2[2] = 3;
+        a2[3] = 4;
+        a2[4] = 5;
+
+        a3[0] = 5;
+        a3[1] = 4;
+        a3[2] = 3;
+        a3[3] = 2;
+        a3[4] = 1;
     }
 
     @Test
     public void testBubbleSort()
     {
-        Sorting.bubbleSort(a);
+        Sorting.bubbleSort(a1);
+        Sorting.bubbleSort(a2);
+        Sorting.bubbleSort(a3);
 
-        assertArrayEquals(expectedAsc, a);
+        assertArrayEquals(expectedAsc1, a1);
+        assertArrayEquals(expectedAsc2, a2);
+        assertArrayEquals(expectedAsc2, a3);
     }
 
     @Test
     public void testInsertionSort()
     {
-        Sorting.insertionSort(a);
+        Sorting.insertionSort(a1);
+        Sorting.insertionSort(a2);
+        Sorting.insertionSort(a3);
 
-        assertArrayEquals(expectedAsc, a);
+        assertArrayEquals(expectedAsc1, a1);
+        assertArrayEquals(expectedAsc2, a2);
+        assertArrayEquals(expectedAsc3, a3);
+    }
+
+    @Test
+    public void testMergeSort()
+    {
+        Sorting.mergeSort(a1);
+        Sorting.mergeSort(a2);
+        Sorting.mergeSort(a3);
+
+        assertArrayEquals(expectedAsc1, a1);
+        assertArrayEquals(expectedAsc2, a2);
+        assertArrayEquals(expectedAsc3, a3);
     }
 }

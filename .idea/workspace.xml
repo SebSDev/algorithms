@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c79f25-e16a-48b7-8411-adc53ec33376" name="Default" comment="- implemented the towers of hanoi recursive&#10;- implemented a maximum subarray method">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data_structures/RingTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algorithms/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithms/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algorithms/Sorting.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/Algorithms/SortingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Algorithms/SortingTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data_structures/Ring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_structures/Ring.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,57 +31,76 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="6" />
+          <entry key="class" value="1" />
+          <entry key="df" value="1" />
+          <entry key="java" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="6" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="9" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3413" />
-          <entry key="txt" value="224" />
+          <entry key="java" value="5408" />
+          <entry key="txt" value="239" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3413" />
-          <entry key="PLAIN_TEXT" value="224" />
+          <entry key="JAVA" value="5408" />
+          <entry key="PLAIN_TEXT" value="239" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/Sorting.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-              <folding>
-                <element signature="docComment;method#bubbleSort#0;class#Sorting#0" />
-                <element signature="method#bubbleSort#0;class#Sorting#0" />
-                <element signature="docComment;method#insertionSort#0;class#Sorting#0" />
-                <element signature="method#insertionSort#0;class#Sorting#0" />
-                <element signature="e#1536#1537#0" expanded="true" />
-                <element signature="e#1581#1582#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Main.java">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/data_structures/Ring.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="277">
+              <caret line="168" column="9" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
+              <folding>
+                <element signature="docComment;method#Ring#0;class#Ring#0" />
+                <element signature="docComment;method#isEmpty#0;class#Ring#0" />
+                <element signature="docComment;method#isFirst#0;class#Ring#0" />
+                <element signature="docComment;method#getFirst#0;class#Ring#0" />
+                <element signature="docComment;method#getNext#0;class#Ring#0" />
+                <element signature="docComment;method#getSize#0;class#Ring#0" />
+                <element signature="method#getSize#0;class#Ring#0" />
+                <element signature="docComment;method#getItem#0;class#Ring#0" />
+                <element signature="method#getItem#0;class#Ring#0" />
+                <element signature="docComment;method#append#0;class#Ring#0" />
+                <element signature="method#append#0;class#Ring#0" />
+                <element signature="docComment;method#split#0;class#Ring#0" />
+                <element signature="docComment;method#toString#0;class#Ring#0" />
+                <element signature="method#toString#0;class#Ring#0" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/SortingTest.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/data_structures/RingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="328">
+              <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,13 +135,14 @@
         <option value="$PROJECT_DIR$/src/DivideAndConquer.java" />
         <option value="$PROJECT_DIR$/src/DivideAndConquer.java" />
         <option value="$PROJECT_DIR$/src/algorithms/DivideAndConquer.java" />
-        <option value="$PROJECT_DIR$/src/data_structures/Ring.java" />
         <option value="$PROJECT_DIR$/src/algorithms/Sorting.java" />
         <option value="$PROJECT_DIR$/tests/SortingTest.java" />
         <option value="$PROJECT_DIR$/tests/SortingTest.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/Ring.java" />
+        <option value="$PROJECT_DIR$/tests/data_structures/RingTest.java" />
       </list>
     </option>
   </component>
@@ -167,6 +188,12 @@
               <item name="algorithms" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Algorithms" type="b2602c69:ProjectViewProjectNode" />
+              <item name="algorithms" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="data_structures" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -177,11 +204,16 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540633415681" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540637770674" />
     <property name="last_opened_file_path" value="F:/Studium/AD/VL1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="algorithms" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,29 +227,32 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortingTest">
+  <component name="RunManager" selected="JUnit.RingTest.testSplit">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Ring" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="data_structures.Ring" />
-      <module name="Algorithms" />
+    <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RingTest.testSplit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="data_structures.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PACKAGE_NAME" value="data_structures" />
+      <option name="MAIN_CLASS_NAME" value="data_structures.RingTest" />
+      <option name="METHOD_NAME" value="testSplit" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -289,18 +324,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SortingTest" />
-      <item itemvalue="Application.Ring" />
       <item itemvalue="JUnit.SortingTest.testBubbleSort" />
       <item itemvalue="JUnit.SortingTest.testInsertionSort" />
       <item itemvalue="JUnit.SortingTest.testMergeSort" />
+      <item itemvalue="JUnit.RingTest.testSplit" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RingTest.testSplit" />
         <item itemvalue="JUnit.SortingTest" />
         <item itemvalue="JUnit.SortingTest.testMergeSort" />
         <item itemvalue="JUnit.SortingTest.testInsertionSort" />
         <item itemvalue="JUnit.SortingTest.testBubbleSort" />
-        <item itemvalue="Application.Ring" />
       </list>
     </recent_temporary>
   </component>
@@ -336,31 +371,17 @@
       <option name="project" value="LOCAL" />
       <updated>1540633414021</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added gitignore">
+      <created>1540633660408</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1540633660408</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SortingTest_testInsertionSort - 2018.10.27 at 10h 58m 44s.xml">
-      <configuration name="SortingTest.testInsertionSort" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest_testMergeSort - 2018.10.27 at 11h 03m 21s.xml">
-      <configuration name="SortingTest.testMergeSort" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest_testMergeSort - 2018.10.27 at 11h 04m 01s.xml">
-      <configuration name="SortingTest.testMergeSort" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest - 2018.10.27 at 11h 17m 24s.xml">
-      <configuration name="SortingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest - 2018.10.27 at 11h 31m 20s.xml">
-      <configuration name="SortingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest - 2018.10.27 at 11h 32m 51s.xml">
-      <configuration name="SortingTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="SortingTest - 2018.10.27 at 11h 32m 59s.xml">
-      <configuration name="SortingTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SortingTest - 2018.10.27 at 11h 33m 46s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
     </history-entry>
@@ -369,6 +390,27 @@
     </history-entry>
     <history-entry file="SortingTest - 2018.10.27 at 11h 34m 41s.xml">
       <configuration name="SortingTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 22m 06s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 22m 44s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 22m 57s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 23m 17s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 26m 53s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 28m 10s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RingTest_testSplit - 2018.10.27 at 12h 32m 22s.xml">
+      <configuration name="RingTest.testSplit" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -384,15 +426,15 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2496454" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2496454" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.28936172" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32907802" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.13758865" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -410,7 +452,8 @@
     <MESSAGE value="- added some comments&#10;- implemented mergeSort" />
     <MESSAGE value="- implemented the towers of hanoi recursive&#10;- implemented a maximum subarray method" />
     <MESSAGE value="- implemented a doubly linked ring list" />
-    <option name="LAST_COMMIT_MESSAGE" value="- implemented a doubly linked ring list" />
+    <MESSAGE value="added gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="added gitignore" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -422,13 +465,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/df">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-736">
@@ -443,29 +479,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/Ring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="91" column="25" selection-start-line="91" selection-start-column="25" selection-end-line="91" selection-end-column="25" />
-          <folding>
-            <element signature="e#831#832#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#976#977#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/SortingTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/DivideAndConquer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -479,8 +492,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/Sorting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="56" column="7" lean-forward="true" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+        <state relative-caret-position="238">
+          <caret line="34" column="46" lean-forward="true" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="46" />
           <folding>
             <element signature="docComment;method#bubbleSort#0;class#Sorting#0" />
             <element signature="method#bubbleSort#0;class#Sorting#0" />
@@ -488,6 +501,67 @@
             <element signature="method#insertionSort#0;class#Sorting#0" />
             <element signature="e#1536#1537#0" expanded="true" />
             <element signature="e#1581#1582#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/df">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/SortingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="333" selection-start-line="333" selection-end-line="333" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/Ring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="168" column="9" selection-start-line="168" selection-start-column="9" selection-end-line="168" selection-end-column="9" />
+          <folding>
+            <element signature="docComment;method#Ring#0;class#Ring#0" />
+            <element signature="docComment;method#isEmpty#0;class#Ring#0" />
+            <element signature="docComment;method#isFirst#0;class#Ring#0" />
+            <element signature="docComment;method#getFirst#0;class#Ring#0" />
+            <element signature="docComment;method#getNext#0;class#Ring#0" />
+            <element signature="docComment;method#getSize#0;class#Ring#0" />
+            <element signature="method#getSize#0;class#Ring#0" />
+            <element signature="docComment;method#getItem#0;class#Ring#0" />
+            <element signature="method#getItem#0;class#Ring#0" />
+            <element signature="docComment;method#append#0;class#Ring#0" />
+            <element signature="method#append#0;class#Ring#0" />
+            <element signature="docComment;method#split#0;class#Ring#0" />
+            <element signature="docComment;method#toString#0;class#Ring#0" />
+            <element signature="method#toString#0;class#Ring#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data_structures/RingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="38" column="45" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

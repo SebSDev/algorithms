@@ -3,11 +3,10 @@ package data_structures;
 /**
  * @author Sebastian Schäffler
  * created at 21.10.2018
- * description:
+ * description: A doubly linked ring list
  */
 public class Ring
 {
-
     // inner class: groups data value and prev/next "pointer"
     class Item
     {
@@ -26,38 +25,100 @@ public class Ring
     // "first" element of ring, anchor
     private Item first;
 
-    // create empty ring
+    /**
+     * Creating an new empty Ring
+     */
     public Ring()
     {
         first = null;
     }
 
-    // check if ring is empty
+    /**
+     * Checking if the ring is empty
+     * @return true if the Ring is empty, otherwise false
+     */
     public boolean isEmpty()
     {
         return first == null;
     }
 
-    // check if element is "first" anchor element
+    /**
+     * Check if the item is the "first" element of this Ring
+     * @param item the item to check
+     * @return true if the item is the "first" element, otherwise false
+     */
     public boolean isFirst(Item item)
     {
         return item == first;
     }
 
-    // return "first" anchor element
+    /**
+     * Gets the first element
+     * @return the first element of this Ring
+     */
     public Item getFirst()
     {
         return first;
     }
 
-    // return element that succeeds "item"
+    /**
+     * Gets the succeeding element of the item in this Ring
+     * @param item item to get the successor of
+     * @return the succeeding element
+     */
     public Item getNext(Item item)
     {
         return item.next;
     }
 
-    // add element with value "val" to THIS ring in front of "first"/anchor element
-    // leave first element / anchor unchanged.
+    /**
+     * Gets the amount of items of this Ring
+     * @return the amount of items of this Ring
+     */
+    public int getSize()
+    {
+        if (this.isEmpty()) return 0;
+
+        Item i = first.next;
+        int counter = 1;
+
+        while (i != first)
+        {
+            counter++;
+
+            i = i.next;
+        }
+
+        return counter;
+    }
+
+    /**
+     * Gets the first occurring item with the value
+     * @param val value to search for
+     * @return the item with the value. If there is no Item with val -> null
+     */
+    public Item getItem(int val)
+    {
+        Item i = first;
+
+        if (i != null)
+        {
+            do
+            {
+                if (i.value == val) return i;
+
+                i = i.next;
+
+            } while (i != first);
+        }
+
+        return null;
+    }
+
+    /**
+     * Appending a new element with the value "val" to this Ring. It is appended before the "first" element.
+     * @param val value of the element to append
+     */
     public void append(int val)
     {
         Item i = new Item(val);
@@ -80,8 +141,12 @@ public class Ring
 
     }
 
-    // removes items [a..b] from THIS ring and returns removed ring
-    // Assumption: a..b does not include anchor/first element
+    /**
+     * Removes items from this Ring and creates a new Ring with the new elements
+     * @param a starting index of the new Ring
+     * @param b ending index of the new Ring
+     * @return the new Ring
+     */
     public Ring split(Item a, Item b)
     {
         Ring newRing = new Ring();
@@ -107,6 +172,10 @@ public class Ring
     }
 
 
+    /**
+     * Creates a String that represents this Ring
+     * @return the created String
+     */
     public String toString()
     {
         if (first == null)

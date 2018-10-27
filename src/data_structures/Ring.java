@@ -171,7 +171,6 @@ public class Ring
         return newRing;
     }
 
-
     /**
      * Creates a String that represents this Ring
      * @return the created String
@@ -195,33 +194,5 @@ public class Ring
             return back;
         }
     }
-
-    // Testet die Implementierung
-    public static void main(String args[])
-    {
-        // Erzeuge Ring mit den Elementen 1..8
-        Ring r = new Ring();
-        r.append(1);
-        r.append(2);
-        r.append(3);
-        r.append(4);
-        r.append(5);
-        r.append(6);
-        r.append(7);
-        r.append(8);
-        System.out.println("Erzeugter Ring:  r = " + r.toString());
-        System.out.println("Erwartet:        r = 1 2 3 4 5 6 7 8\n");
-
-
-        // Trenne den Teilring 3..6 vom Ring r ab und speichere in R2
-        Item pos3 = r.getNext(r.getNext(r.getFirst()));
-        Item pos6 = r.getNext(r.getNext(r.getNext(pos3)));
-        Ring r2 = r.split(pos3, pos6);
-        System.out.println("Teilring r2 (=" + r2.toString() + ") wird abgetrennt -> r = " + r.toString());
-        System.out.println("Erwartet: r = 1 2 7 8\n");
-
-
-    }
-
 
 }

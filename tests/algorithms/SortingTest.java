@@ -1,3 +1,5 @@
+package algorithms;
+
 import algorithms.Sorting;
 import org.junit.Before;
 import org.junit.Test;

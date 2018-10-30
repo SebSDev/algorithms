@@ -83,4 +83,16 @@ public class SortingTest
         assertArrayEquals(expectedAsc2, a2);
         assertArrayEquals(expectedAsc3, a3);
     }
+
+    @Test
+    public void testHeapSort()
+    {
+        Sorting.heapSort(a1);
+        Sorting.heapSort(a2);
+        Sorting.heapSort(a3);
+
+        assertArrayEquals(expectedAsc1, a1);
+        assertArrayEquals(expectedAsc2, a2);
+        assertArrayEquals(expectedAsc3, a3);
+    }
 }

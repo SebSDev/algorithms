@@ -134,4 +134,79 @@ public class Sorting
             }
         }
     }
+
+
+    /**
+     * Sorts an array in ascending order using heapsort
+     * @param a array to sort
+     */
+    public static void heapSort (int[] a)
+    {
+        buildMaxHeap(a);
+
+        for (int i = a.length - 1; i >= 1; i--)
+        {
+            // exchanging a[0] and a[i]
+            int tmp = a[i];
+            a[i] = a[0];
+            a[0] = tmp;
+
+            maxHeapify(a, 0, i - 1);
+        }
+    }
+
+    /**
+     * builds a max heap
+     * @param a array to build the max heap of
+     */
+    private static void buildMaxHeap (int[] a)
+    {
+        int n = a.length;
+
+        for (int i = n / 2; i >= 0; i--)
+        {
+            maxHeapify(a, i, n - 1);
+        }
+    }
+
+    /**
+     * building a max heap of a parent element (knot) and its children
+     * @param a array which holds the elements
+     * @param i index of the knot
+     * @param n max index of the array
+     */
+    private static void maxHeapify (int[] a, int i, int n)
+    {
+        int l = 2 * i + 1; // index of the left element of the knot with index i
+        int r = 2 * i + 2; // index of the right element of the knot with index i
+        int largest = 0;
+
+        // first we check if the index l can be part of the array
+        // then if the left element is larger than its parent element
+        // => we set the index of the largest element to l
+        if (l <= n && a[l] > a[i])
+        {
+            largest = l;
+        }
+        else
+        {
+            largest = i;
+        }
+
+        // now we check if the right element is the largest of the three
+        if (r <= n && a[r] > a[largest])
+        {
+            largest = r;
+        }
+
+        // if the original knot is not the largest element, we exchange it with the largest element
+        if (largest != i)
+        {
+            int tmp = a[i];
+            a[i] = a[largest];
+            a[largest] = tmp;
+
+            maxHeapify(a, largest, n);
+        }
+    }
 }

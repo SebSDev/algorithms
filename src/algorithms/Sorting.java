@@ -9,7 +9,7 @@ public class Sorting
 {
     /**
      * Sorts an integer array using bubblesort
-     * @param a array to sort
+     * @param a array to countingSort
      */
     public static void bubbleSort (int[] a)
     {
@@ -29,8 +29,8 @@ public class Sorting
     }
 
     /**
-     * Sorts an integer array using insertion sort
-     * @param a array to sort
+     * Sorts an integer array using insertion countingSort
+     * @param a array to countingSort
      */
     public static void insertionSort (int[] a)
     {
@@ -55,8 +55,8 @@ public class Sorting
     }
 
     /**
-     * Sorts an integer array using merge sort
-     * @param a array to sort
+     * Sorts an integer array using merge countingSort
+     * @param a array to countingSort
      */
     public static void mergeSort (int[] a)
     {
@@ -64,10 +64,10 @@ public class Sorting
     }
 
     /**
-     * Sorts an integer array using merge sort
-     * @param a array to sort
-     * @param l left boundary index of the current subarray to sort
-     * @param r right boundary index of the current subarray to sort
+     * Sorts an integer array using merge countingSort
+     * @param a array to countingSort
+     * @param l left boundary index of the current subarray to countingSort
+     * @param r right boundary index of the current subarray to countingSort
      */
     private static void mergeSort (int[] a, int l, int r)
     {
@@ -85,7 +85,7 @@ public class Sorting
 
     /**
      * merging two already sorted subarrays of the array
-     * @param a complete array to sort
+     * @param a complete array to countingSort
      * @param l left boundary index of the first subarray
      * @param m border index between the two subarrays
      * @param r right index boundary of the second subarray
@@ -138,7 +138,7 @@ public class Sorting
 
     /**
      * Sorts an array in ascending order using heapsort
-     * @param a array to sort
+     * @param a array to countingSort
      */
     public static void heapSort (int[] a)
     {
@@ -208,5 +208,45 @@ public class Sorting
 
             maxHeapify(a, largest, n);
         }
+    }
+
+
+    /**
+     * sorts an array using counting countingSort
+     * @param a integer array given as input
+     * @param k defines maximum integer value in input; all integers must in range [0..k]
+     * @return input array is sorted in a stable manner
+     */
+    public static Integer[] countingSort(Integer[] a, Integer k)
+    {
+        Integer[] b = new Integer[a.length]; // result array
+        int[] c = new int[k + 1];
+
+        // counting the number of occurrences of each value in a
+        for (Integer i : a)
+        {
+            c[i]++;
+        }
+
+        // counting how many Integers are <= the current index
+        // and save it to the current index
+        for (int i = 1; i < c.length; i++)
+        {
+            c[i] += c[i-1];
+        }
+
+        // iterating through the elements in a and set them to the right position in b
+        for (int i = 0; i < a.length; i++)
+        {
+            // c[a[i]] tells us how many elements are before the one
+            // so the index of our current a[i] is the amount of elements before -1 (because the index starts at 0)
+            b[c[a[i]] - 1] = a[i];
+
+            // now we have to decrease the amount of numbers that are before our current element,
+            // because we just added one to the new list
+            c[a[i]]--;
+        }
+
+        return b;
     }
 }

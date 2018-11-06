@@ -20,9 +20,7 @@ public class Sorting
                 if (a[j] < a[j - 1])
                 {
                     // exchanging a[j] and a[j - 1]
-                    int tmp = a[j];
-                    a[j] = a[j - 1];
-                    a[j - 1] = tmp;
+                    AlgorithmUtils.exchange(a, j, j-1);
                 }
             }
         }
@@ -142,74 +140,16 @@ public class Sorting
      */
     public static void heapSort (int[] a)
     {
-        buildMaxHeap(a);
+        AlgorithmUtils.buildMaxHeap(a);
 
         for (int i = a.length - 1; i >= 1; i--)
         {
             // exchanging a[0] and a[i]
-            int tmp = a[i];
-            a[i] = a[0];
-            a[0] = tmp;
+            AlgorithmUtils.exchange(a, 0, i);
 
-            maxHeapify(a, 0, i - 1);
+            AlgorithmUtils.maxHeapify(a, 0, i - 1);
         }
     }
-
-    /**
-     * builds a max heap
-     * @param a array to build the max heap of
-     */
-    private static void buildMaxHeap (int[] a)
-    {
-        int n = a.length;
-
-        for (int i = n / 2; i >= 0; i--)
-        {
-            maxHeapify(a, i, n - 1);
-        }
-    }
-
-    /**
-     * building a max heap of a parent element (knot) and its children
-     * @param a array which holds the elements
-     * @param i index of the knot
-     * @param n max index of the array
-     */
-    private static void maxHeapify (int[] a, int i, int n)
-    {
-        int l = 2 * i + 1; // index of the left element of the knot with index i
-        int r = 2 * i + 2; // index of the right element of the knot with index i
-        int largest = 0;
-
-        // first we check if the index l can be part of the array
-        // then if the left element is larger than its parent element
-        // => we set the index of the largest element to l
-        if (l <= n && a[l] > a[i])
-        {
-            largest = l;
-        }
-        else
-        {
-            largest = i;
-        }
-
-        // now we check if the right element is the largest of the three
-        if (r <= n && a[r] > a[largest])
-        {
-            largest = r;
-        }
-
-        // if the original knot is not the largest element, we exchange it with the largest element
-        if (largest != i)
-        {
-            int tmp = a[i];
-            a[i] = a[largest];
-            a[largest] = tmp;
-
-            maxHeapify(a, largest, n);
-        }
-    }
-
 
     /**
      * sorts an array using counting countingSort
@@ -238,13 +178,13 @@ public class Sorting
         // iterating through the elements in a and set them to the right position in b
         for (int i = 0; i < a.length; i++)
         {
-            // c[a[i]] tells us how many elements are before the one
-            // so the index of our current a[i] is the amount of elements before -1 (because the index starts at 0)
-            b[c[a[i]] - 1] = a[i];
-
             // now we have to decrease the amount of numbers that are before our current element,
             // because we just added one to the new list
             c[a[i]]--;
+
+            // c[a[i]] tells us how many elements are before the one
+            // so the index of our current a[i] is the amount of elements before (because the index starts at 0)
+            b[c[a[i]]] = a[i];
         }
 
         return b;

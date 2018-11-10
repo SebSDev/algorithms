@@ -117,4 +117,13 @@ public class SortingTest
         assertSame("Checking stable countingSort for 2nd 3", input[5], result[5]);
         assertSame("Checking stable countingSort for 3rd 3", input[7], result[6]);
     }
+
+
+    @Test
+    public void testRadixSort()
+    {
+        Integer[] input = { 3728, 52938, 3284, 283, 1234, 235, 1238, 3 };
+        Integer[] expected = { 3, 235, 283, 1234, 1238, 3284, 3728, 52938 };
+        assertArrayEquals(expected, Sorting.radixSort(input, 5));
+    }
 }

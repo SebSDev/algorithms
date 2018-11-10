@@ -152,7 +152,7 @@ public class Sorting
     }
 
     /**
-     * sorts an array using counting countingSort
+     * sorts an array using countingSort
      * @param a integer array given as input
      * @param k defines maximum integer value in input; all integers must in range [0..k]
      * @return input array is sorted in a stable manner
@@ -185,6 +185,64 @@ public class Sorting
             // c[a[i]] tells us how many elements are before the one
             // so the index of our current a[i] is the amount of elements before (because the index starts at 0)
             b[c[a[i]]] = a[i];
+        }
+
+        return b;
+    }
+
+    /**
+     * sorts an array of integers in ascending order using radixSort
+     * @param a the array to sort
+     * @param d the maximum amount of digits a value has in this array
+     * @return the sorted array
+     */
+    public static Integer[] radixSort(Integer[] a, int d)
+    {
+        // iterating through all the digits beginning with the least significant one
+        for (int i = 1; i <= d; i++)
+        {
+            // using counting sort for the current digit
+            a = countingSortRadix(a, i);
+        }
+
+        return a;
+    }
+
+    /**
+     * sorts an array using countingSort
+     * @param a integer array given as input
+     * @param k which digit should be sorted for
+     * @return input array is sorted in a stable manner
+     */
+    public static Integer[] countingSortRadix(Integer[] a, Integer k)
+    {
+        int pot = (int)Math.pow(10, k-1); // the 10^k value that we need to get the right digit
+        Integer[] b = new Integer[a.length]; // result array
+        int[] c = new int[10];
+
+        // counting the number of occurrences of each value in array a
+        for (Integer i : a)
+        {
+            c[(i / pot) % 10]++;
+        }
+
+        // counting how many Integers are <= the current index
+        // and save it to the current index
+        for (int i = 1; i < c.length; i++)
+        {
+            c[i] += c[i-1];
+        }
+
+        // iterate through all the elements and set them on the right position in the result array
+        for (int i = a.length-1; i >= 0; i--)
+        {
+            // (a[i] / pot) % 10 is the digit for this element
+            // c[...] - 1 is how many digits are <= this digit, so this is the actual position of this element in
+            // b[...]
+            b[ c[ (a[i] / pot) % 10 ] - 1 ] = a[i];
+
+            // reducing the amount of digits that are <= this one because we just "used" one
+            c[ (a[i] / pot) % 10 ]--;
         }
 
         return b;

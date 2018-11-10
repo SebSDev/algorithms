@@ -19,7 +19,7 @@ public class IterativeQueueMergeSort
      * - "Queue" is only an interface, here a "LinkedList" is always used as its implementation
      * - enqueue: method add(.)
      * - dequeue: method remove(.)
-     * - peek:    methoed peek(.) or element(.) to examine element at head of queue without removing it.
+     * - peek:    method peek(.) or element(.) to examine element at head of queue without removing it.
      */
     private static Queue<Queue<Comparable>> centralQueue;
 

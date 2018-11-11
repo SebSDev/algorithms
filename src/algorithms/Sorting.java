@@ -282,6 +282,8 @@ public class Sorting
                     if (a[k].charAt(i-1) == tmp[j])
                     {
                         AlgorithmUtils.exchange(a, currStart, k);
+
+                        // in the next iteration we should not go through the already sorted elements
                         currStart++;
                         break;
                     }

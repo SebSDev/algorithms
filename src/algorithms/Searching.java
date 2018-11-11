@@ -26,23 +26,22 @@ public class Searching
         // pivot
         int p = AlgorithmUtils.partition(a, l, r);
 
-        // relative index of the pivot element
-        int k = p - l - 1;
+        // number of elements that are right of the pivot (+ pivot)
+        int k = r - p + 1;
 
-        // if the relative index == i we got the element
+        // if the number of elements right of the pivot == i we got the element
         if (k == i)
         {
             return a[p];
         }
-        // the searched element is in the left partition
-        else if (i < k)
+        else if (i > k) // the searched element is in the left partition
         {
-            return quickSelect(a, l, p - 1, i);
+            return quickSelect(a, l, p - 1, i - k);
         }
-        // the searched element is in the right partition
-        else
+        else  // the searched element is in the right partition
         {
-            return quickSelect(a, p + 1, r,  i - k);
+            return quickSelect(a, p + 1, r, i);
         }
     }
+
 }

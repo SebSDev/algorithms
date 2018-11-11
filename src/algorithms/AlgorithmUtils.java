@@ -27,6 +27,20 @@ abstract class AlgorithmUtils
     }
 
     /**
+     * exchanges the array elements with index i and j
+     * @param a array in which to exchange the elements
+     * @param i index of the first element
+     * @param j index of the second element
+     */
+    static void exchange(Object[] a, int i, int j)
+    {
+        Object tmp = a[i];
+
+        a[i] = a[j];
+        a[j] = tmp;
+    }
+
+    /**
      * builds a max heap
      * @param a array to build the max heap of
      */

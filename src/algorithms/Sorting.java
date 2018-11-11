@@ -198,14 +198,16 @@ public class Sorting
      */
     public static Integer[] radixSort(Integer[] a, int d)
     {
+        Integer[] result = a;
+
         // iterating through all the digits beginning with the least significant one
         for (int i = 1; i <= d; i++)
         {
             // using counting sort for the current digit
-            a = countingSortRadix(a, i);
+            result = countingSortRadix(result, i);
         }
 
-        return a;
+        return result;
     }
 
     /**
@@ -246,5 +248,46 @@ public class Sorting
         }
 
         return b;
+    }
+
+    /**
+     * directly sorts the array of w-character strings in ascending order.
+     * Assumption: - each char is an 8-bit value (extended ASCII)
+     *             - all strings have the same length of w
+     *
+     * @param a the array to be sorted
+     * @param w the number of characters per string
+     */
+    public static void sortStrings(String[] a, int w)
+    {
+        // sorting the single characters from right to left
+        for (int i = w; i > 0; i--)
+        {
+            // getting the current characters
+            Integer[] tmp = new Integer[a.length];
+            for (int j = 0; j < a.length; j++)
+            {
+                tmp[j] = (int)a[j].charAt(i-1);
+            }
+
+            // we only have extended ASCII characters => 0-255
+            // sorting the characters at the current position
+            tmp = countingSort(tmp, 255);
+
+            int currStart = 0;
+            for (int j = 0; j < tmp.length; j++) // iterating through sorted chars
+            {
+                for (int k = currStart; k < a.length; k++) // iterating through "a", starting from first unsorted element
+                {
+                    if (a[k].charAt(i-1) == tmp[j])
+                    {
+                        AlgorithmUtils.exchange(a, currStart, k);
+                        currStart++;
+                        break;
+                    }
+                }
+            }
+
+        }
     }
 }

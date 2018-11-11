@@ -118,12 +118,27 @@ public class SortingTest
         assertSame("Checking stable countingSort for 3rd 3", input[7], result[6]);
     }
 
-
     @Test
     public void testRadixSort()
     {
         Integer[] input = { 3728, 52938, 3284, 283, 1234, 235, 1238, 3 };
         Integer[] expected = { 3, 235, 283, 1234, 1238, 3284, 3728, 52938 };
         assertArrayEquals(expected, Sorting.radixSort(input, 5));
+    }
+
+
+    @Test
+    public void testStringSort()
+    {
+        String[] input = { "4PGC938", "2IYE230", "3CIO720", "1ICK750", "1OHV845", "4JZY524", "1ICK750", "3CIO720", "1OHV845", "1OHV845", "2RLA629", "2RLA629", "3ATW723"};
+        Sorting.sortStrings(input, 7);
+        System.out.print("Result: ");
+        for (String s : input)
+        {
+            System.out.print(s + " ");
+        }
+        System.out.println();
+        String[] expected = {"1ICK750", "1ICK750", "1OHV845", "1OHV845", "1OHV845", "2IYE230", "2RLA629", "2RLA629", "3ATW723", "3CIO720", "3CIO720", "4JZY524", "4PGC938"};
+        assertArrayEquals(expected, input);
     }
 }

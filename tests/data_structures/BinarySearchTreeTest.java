@@ -41,14 +41,21 @@ public class BinarySearchTreeTest
         list.add(50);
         list.add(85);
         list.add(60);
+        list.add(54);
+        list.add(24);
+        list.add(49);
+        list.add(53);
+        list.add(76);
 
-        ascSortedList = list;
-        ascSortedList.sort((o1, o2) -> { return Integer.compare(o1, o2); });
+        ascSortedList = new LinkedList<>();
 
         for (Integer i : list)
         {
             tree.insert(i);
+            ascSortedList.add(i);
         }
+
+        ascSortedList.sort((o1, o2) -> { return Integer.compare(o1, o2); });
     }
 
     @Test
@@ -75,6 +82,12 @@ public class BinarySearchTreeTest
     {
         assertEquals(ascSortedList.get(0), tree.getMin());
         assertEquals(ascSortedList.get(ascSortedList.size() - 1), tree.getMax());
+    }
+
+    @Test
+    public void testDelete()
+    {
+        //TODO
     }
 
     @Test

@@ -97,6 +97,84 @@ public class  BinarySearchTree <T extends Comparable>
     }
 
     /**
+     * Deletes a Node from the tree
+     * @param n The Node to delete
+     */
+    public void delete(Node n)
+    {
+        // n has two direct childs
+        if (n.right != null && n.left != null)
+        {
+            // get the successor of n: The smallest element in the right subtree
+            Node successor = search(getSuccessor(n));
+
+            // If the successor is not a right child, it is not a direct child of n,
+            // so we have to do some extra work - adapting the right hand side childs
+            if (successor != n.right)
+            {
+                // transplanting the right child of the successor in the place of the successor
+                // note: the successor does not have a left child since its the smallest element in its subtree
+                transplant(successor, successor.right);
+
+                // now we set the right child of the successor to the right child of the element we want to delete
+                successor.right = n.right;
+                successor.right.parent = successor;
+            }
+
+            // setting the successor in place of the element we want to delete
+            transplant(n, successor);
+
+            // now we set the left child of the successor to the left child of the element we want to delete
+            successor.left = n.left;
+            successor.left.parent = successor;
+        }
+        // n only has a left child
+        else if (n.left != null)
+        {
+            transplant(n, n.left);
+        }
+        // n only has a right child
+        else if (n.right != null)
+        {
+            transplant(n, n.right);
+        }
+        // n doesn't have any childs
+        else
+        {
+            transplant(n, null);
+        }
+
+        size--;
+    }
+
+    /**
+     * Removes the Node u from the tree and sets the Node v where u was before
+     * @param u Node to remove
+     * @param v Node to move "up"
+     */
+    private void transplant(Node u, Node v)
+    {
+
+        if (u.parent == null)
+        {
+            root = v;
+        }
+        else if (u == u.parent.left)
+        {
+            u.parent.left = v;
+        }
+        else
+        {
+            u.parent.right = v;
+        }
+
+        if (v != null)
+        {
+            v.parent = u.parent;
+        }
+    }
+
+    /**
      * Gets the successor of the specified node
      * The successor is the Element with the next bigger value in the whole tree
      * @param n the node to get the successor of

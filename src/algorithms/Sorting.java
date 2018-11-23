@@ -1,5 +1,7 @@
 package algorithms;
 
+import java.util.Arrays;
+
 /**
  * @author Sebastian Schäffler
  * created at 07.10.2018
@@ -251,6 +253,47 @@ public class Sorting
     }
 
     /**
+     * sorts an array of string using counting sort
+     * @param a string array to sort
+     * @param pos current position in the string to sort for
+     */
+    public static void countingSort(String[] a, int pos)
+    {
+        String[] b = new String[a.length]; // result array
+        int[] c = new int[255];
+
+        // counting the number of occurrences of each char in array a
+        for (String s : a)
+        {
+            c[s.charAt(pos)]++;
+        }
+
+        // counting how many chars are <= the current index
+        // and save it to the current index
+        for (int i = 1; i < c.length; i++)
+        {
+            c[i] += c[i-1];
+        }
+
+        // iterate through all the elements and set them on the right position in the result array
+        for (int i = a.length-1; i >= 0; i--)
+        {
+            // c[...] - 1 is how many chars are <= this char, so this is the actual position of this element in
+            // b[...]
+            b[ c[ a[i].charAt(pos) ] - 1 ] = a[i];
+
+            // reducing the amount of chars that are <= this one because we just "used" one
+            c[ a[i].charAt(pos) ]--;
+        }
+
+        // writing the result in the input array
+        for (int i = 0; i < b.length; i++)
+        {
+            a[i] = b[i];
+        }
+    }
+
+    /**
      * directly sorts the array of w-character strings in ascending order.
      * Assumption: - each char is an 8-bit value (extended ASCII)
      *             - all strings have the same length of w
@@ -260,36 +303,10 @@ public class Sorting
      */
     public static void sortStrings(String[] a, int w)
     {
-        // sorting the single characters from right to left
+        // radix sort from right to left char
         for (int i = w; i > 0; i--)
         {
-            // getting the current characters
-            Integer[] tmp = new Integer[a.length];
-            for (int j = 0; j < a.length; j++)
-            {
-                tmp[j] = (int)a[j].charAt(i-1);
-            }
-
-            // we only have extended ASCII characters => 0-255
-            // sorting the characters at the current position
-            tmp = countingSort(tmp, 255);
-
-            int currStart = 0;
-            for (int j = 0; j < tmp.length; j++) // iterating through sorted chars
-            {
-                for (int k = currStart; k < a.length; k++) // iterating through "a", starting from first unsorted element
-                {
-                    if (a[k].charAt(i-1) == tmp[j])
-                    {
-                        AlgorithmUtils.exchange(a, currStart, k);
-
-                        // in the next iteration we should not go through the already sorted elements
-                        currStart++;
-                        break;
-                    }
-                }
-            }
-
+            countingSort(a, i - 1);
         }
     }
 }

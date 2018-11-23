@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="79c79f25-e16a-48b7-8411-adc53ec33376" name="Default" comment="- removed the main method">
+      <change afterPath="$PROJECT_DIR$/src/data_structures/BinarySearchTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data_structures/MyHashTable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data_structures/BinarySearchTreeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algorithms/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Algorithms/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Algorithms/Sorting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/Algorithms/SortingTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/Algorithms/SortingTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/algorithms/IterativeQueueMergeSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/IterativeQueueMergeSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/SortingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/algorithms/SortingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/Algorithms/SortingTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/algorithms/Sorting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/algorithms/Sorting.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,42 +23,51 @@
     <session id="697676112">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="28" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.open.time.1" value="8" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.36" value="1" />
+          <entry key="project.open.time.34" value="2" />
+          <entry key="project.open.time.35" value="2" />
+          <entry key="project.open.time.36" value="4" />
+          <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.39" value="1" />
+          <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.44" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="1" />
+          <entry key="class" value="2" />
           <entry key="df" value="3" />
-          <entry key="java" value="21" />
+          <entry key="java" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="21" />
+          <entry key="CLASS" value="2" />
+          <entry key="JAVA" value="53" />
           <entry key="PLAIN_TEXT" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="8141" />
-          <entry key="txt" value="485" />
+          <entry key="java" value="21821" />
+          <entry key="txt" value="816" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="8141" />
-          <entry key="PLAIN_TEXT" value="485" />
+          <entry key="JAVA" value="21821" />
+          <entry key="PLAIN_TEXT" value="816" />
         </counts>
       </usages-collector>
     </session>
@@ -63,10 +75,53 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/IterativeQueueMergeSort.java">
+        <entry file="file://$PROJECT_DIR$/src/data_structures/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+            <state relative-caret-position="391">
+              <caret line="155" column="7" lean-forward="true" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
+              <folding>
+                <element signature="docComment;class#Node#0;class#BinarySearchTree#0" />
+                <element signature="class#Node#0;class#BinarySearchTree#0" />
+                <element signature="docComment;method#insert#0;class#BinarySearchTree#0" />
+                <element signature="method#insert#0;class#BinarySearchTree#0" />
+                <element signature="docComment;method#search#0;class#BinarySearchTree#0" />
+                <element signature="method#search#0;class#BinarySearchTree#0" />
+                <element signature="docComment;method#getSuccessor#0;class#BinarySearchTree#0" />
+                <element signature="method#getSuccessor#0;class#BinarySearchTree#0" />
+                <element signature="docComment;method#getPredecessor#0;class#BinarySearchTree#0" />
+                <element signature="method#getPredecessor#0;class#BinarySearchTree#0" />
+                <element signature="docComment;method#getMin#0;class#BinarySearchTree#0" />
+                <element signature="e#2772#2773#0" expanded="true" />
+                <element signature="e#2807#2808#0" expanded="true" />
+                <element signature="docComment;method#getMin#1;class#BinarySearchTree#0" />
+                <element signature="method#getMin#1;class#BinarySearchTree#0" />
+                <element signature="docComment;method#getMax#0;class#BinarySearchTree#0" />
+                <element signature="e#3254#3255#0" expanded="true" />
+                <element signature="e#3289#3290#0" expanded="true" />
+                <element signature="docComment;method#getMax#1;class#BinarySearchTree#0" />
+                <element signature="method#getMax#1;class#BinarySearchTree#0" />
+                <element signature="e#3648#3649#0" expanded="true" />
+                <element signature="e#3687#3688#0" expanded="true" />
+                <element signature="method#printPreOrderList#1;class#BinarySearchTree#0" />
+                <element signature="e#3948#3949#0" expanded="true" />
+                <element signature="e#3986#3987#0" expanded="true" />
+                <element signature="method#printInOrderList#1;class#BinarySearchTree#0" />
+                <element signature="e#4246#4247#0" expanded="true" />
+                <element signature="e#4286#4287#0" expanded="true" />
+                <element signature="method#printPostOrderList#1;class#BinarySearchTree#0" />
+                <element signature="docComment;method#size#0;class#BinarySearchTree#0" />
+                <element signature="e#4638#4639#0" expanded="true" />
+                <element signature="e#4670#4671#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/data_structures/BinarySearchTreeTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,35 +130,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/algorithms/Sorting.java">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="167" column="36" lean-forward="true" selection-start-line="167" selection-start-column="36" selection-end-line="167" selection-end-column="36" />
+            <state relative-caret-position="166">
+              <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
               <folding>
-                <element signature="docComment;method#bubbleSort#0;class#Sorting#0" />
-                <element signature="method#bubbleSort#0;class#Sorting#0" />
-                <element signature="docComment;method#insertionSort#0;class#Sorting#0" />
-                <element signature="method#insertionSort#0;class#Sorting#0" />
-                <element signature="docComment;method#mergeSort#0;class#Sorting#0" />
-                <element signature="docComment;method#mergeSort#1;class#Sorting#0" />
-                <element signature="method#mergeSort#1;class#Sorting#0" />
-                <element signature="docComment;method#merge#0;class#Sorting#0" />
-                <element signature="method#merge#0;class#Sorting#0" />
+                <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/df">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/algorithms/SortingTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -122,6 +155,9 @@
       <find>removefirst</find>
       <find>isSorted</find>
       <find>peek</find>
+      <find>= a[i</find>
+      <find>exchange</find>
+      <find>sortstrings</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -145,31 +181,37 @@
         <option value="$PROJECT_DIR$/src/DivideAndConquer.java" />
         <option value="$PROJECT_DIR$/src/DivideAndConquer.java" />
         <option value="$PROJECT_DIR$/src/algorithms/DivideAndConquer.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/tests/data_structures/RingTest.java" />
         <option value="$PROJECT_DIR$/src/data_structures/Ring.java" />
         <option value="$PROJECT_DIR$/tests/algorithms/IterativeQueueMergeSortTest.java" />
         <option value="$PROJECT_DIR$/src/algorithms/IterativeQueueMergeSort.java" />
-        <option value="$PROJECT_DIR$/src/algorithms/Sorting.java" />
         <option value="$PROJECT_DIR$/tests/SortingTest.java" />
         <option value="$PROJECT_DIR$/tests/SortingTest.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/AlgorithmUtils.java" />
+        <option value="$PROJECT_DIR$/tests/algorithms/SearchingTest.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/Searching.java" />
         <option value="$PROJECT_DIR$/tests/algorithms/SortingTest.java" />
+        <option value="$PROJECT_DIR$/src/algorithms/Sorting.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/MyHashTable.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/data_structures/BinarySearchTree.java" />
+        <option value="$PROJECT_DIR$/tests/data_structures/BinarySearchTreeTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1350" />
-    <option name="height" value="690" />
+    <option name="x" value="950" />
+    <option name="width" value="980" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -215,7 +257,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -223,7 +264,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540892895093" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542965462097" />
     <property name="last_opened_file_path" value="F:/Studium/AD/VL1" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
@@ -246,7 +287,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.SortingTest.testHeapSort">
+  <component name="RunManager" selected="JUnit.BinarySearchTreeTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -259,22 +300,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IterativeQueueMergeSortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithms" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="algorithms.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="algorithms" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.IterativeQueueMergeSortTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RingTest.testSplit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
       <extension name="coverage">
         <pattern>
@@ -283,39 +309,74 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="data_structures" />
-      <option name="MAIN_CLASS_NAME" value="data_structures.RingTest" />
-      <option name="METHOD_NAME" value="testSplit" />
+      <option name="MAIN_CLASS_NAME" value="data_structures.BinarySearchTreeTest" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.testMinMax" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_structures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data_structures" />
+      <option name="MAIN_CLASS_NAME" value="data_structures.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testMinMax" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.testPredecessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
-      <option name="PACKAGE_NAME" value="algorithms" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.SortingTest" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SortingTest.testHeapSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Algorithms" />
-      <option name="PACKAGE_NAME" value="algorithms" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.SortingTest" />
-      <option name="METHOD_NAME" value="testHeapSort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_structures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data_structures" />
+      <option name="MAIN_CLASS_NAME" value="data_structures.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testPredecessor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SortingTest.testMergeSort" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BinarySearchTreeTest.testSearch" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Algorithms" />
-      <option name="PACKAGE_NAME" value="algorithms" />
-      <option name="MAIN_CLASS_NAME" value="algorithms.SortingTest" />
-      <option name="METHOD_NAME" value="testMergeSort" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_structures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data_structures" />
+      <option name="MAIN_CLASS_NAME" value="data_structures.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testSearch" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BinarySearchTreeTest.testSuccessor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Algorithms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data_structures.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data_structures" />
+      <option name="MAIN_CLASS_NAME" value="data_structures.BinarySearchTreeTest" />
+      <option name="METHOD_NAME" value="testSuccessor" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -346,19 +407,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.SortingTest" />
-      <item itemvalue="JUnit.SortingTest.testMergeSort" />
-      <item itemvalue="JUnit.RingTest.testSplit" />
-      <item itemvalue="JUnit.IterativeQueueMergeSortTest" />
-      <item itemvalue="JUnit.SortingTest.testHeapSort" />
+      <item itemvalue="JUnit.BinarySearchTreeTest.testSearch" />
+      <item itemvalue="JUnit.BinarySearchTreeTest.testMinMax" />
+      <item itemvalue="JUnit.BinarySearchTreeTest.testSuccessor" />
+      <item itemvalue="JUnit.BinarySearchTreeTest.testPredecessor" />
+      <item itemvalue="JUnit.BinarySearchTreeTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SortingTest.testHeapSort" />
-        <item itemvalue="JUnit.IterativeQueueMergeSortTest" />
-        <item itemvalue="JUnit.RingTest.testSplit" />
-        <item itemvalue="JUnit.SortingTest" />
-        <item itemvalue="JUnit.SortingTest.testMergeSort" />
+        <item itemvalue="JUnit.BinarySearchTreeTest" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testSearch" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testPredecessor" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testSuccessor" />
+        <item itemvalue="JUnit.BinarySearchTreeTest.testMinMax" />
       </list>
     </recent_temporary>
   </component>
@@ -429,62 +490,125 @@
       <option name="project" value="LOCAL" />
       <updated>1540892466926</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- moved SortingTest to the algorithms package">
+      <created>1540892939115</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1540892939115</updated>
+    </task>
+    <task id="LOCAL-00010" summary="- implemented CountingSort">
+      <created>1541338463821</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1541338463821</updated>
+    </task>
+    <task id="LOCAL-00011" summary="- moved some methods to a new Util class &quot;AlgorithmUtil&quot;">
+      <created>1541515967250</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1541515967250</updated>
+    </task>
+    <task id="LOCAL-00012" summary="- added some comments">
+      <created>1541869996633</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1541869996633</updated>
+    </task>
+    <task id="LOCAL-00013" summary="- fixed typo">
+      <created>1541870032394</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1541870032394</updated>
+    </task>
+    <task id="LOCAL-00014" summary="- implemented radixSort">
+      <created>1541889848118</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1541889848119</updated>
+    </task>
+    <task id="LOCAL-00015" summary="- implemented sortStrings() for sorting strings using radix sort">
+      <created>1541934570791</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1541934570791</updated>
+    </task>
+    <task id="LOCAL-00016" summary="- added a comment">
+      <created>1541934725216</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1541934725216</updated>
+    </task>
+    <task id="LOCAL-00017" summary="- fixed a bug in quickSelect">
+      <created>1541945289965</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1541945289965</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="IterativeQueueMergeSortTest - 2018.10.30 at 10h 07m 59s.xml">
-      <configuration name="IterativeQueueMergeSortTest" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testSuccessor - 2018.11.23 at 00h 19m 41s.xml">
+      <configuration name="BinarySearchTreeTest.testSuccessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 08m 08s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testSuccessor - 2018.11.23 at 10h 00m 23s.xml">
+      <configuration name="BinarySearchTreeTest.testSuccessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 10m 58s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testSuccessor - 2018.11.23 at 10h 15m 24s.xml">
+      <configuration name="BinarySearchTreeTest.testSuccessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 11m 37s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testSuccessor - 2018.11.23 at 10h 17m 54s.xml">
+      <configuration name="BinarySearchTreeTest.testSuccessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 22m 26s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testSuccessor - 2018.11.23 at 10h 18m 23s.xml">
+      <configuration name="BinarySearchTreeTest.testSuccessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 22m 54s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testPredecessor - 2018.11.23 at 10h 19m 07s.xml">
+      <configuration name="BinarySearchTreeTest.testPredecessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 32m 27s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testPredecessor - 2018.11.23 at 10h 25m 34s.xml">
+      <configuration name="BinarySearchTreeTest.testPredecessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 32m 56s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testPredecessor - 2018.11.23 at 10h 26m 54s.xml">
+      <configuration name="BinarySearchTreeTest.testPredecessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 34m 47s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testPredecessor - 2018.11.23 at 10h 27m 02s.xml">
+      <configuration name="BinarySearchTreeTest.testPredecessor" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="SortingTest_testHeapSort - 2018.10.30 at 10h 39m 57s.xml">
-      <configuration name="SortingTest.testHeapSort" configurationId="JUnit" />
+    <history-entry file="BinarySearchTreeTest_testSearch - 2018.11.23 at 10h 30m 30s.xml">
+      <configuration name="BinarySearchTreeTest.testSearch" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25973153" />
-      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2342282" />
+      <window_info id="Structure" order="1" weight="0.24966443" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2496454" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.28936172" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30070922" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.34184396" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="9" weight="0.13758865" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.1319149" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -495,6 +619,44 @@
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23087248" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32907802" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30070922" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.364539" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.1319149" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32907802" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -508,10 +670,29 @@
     <MESSAGE value="- removed the main method" />
     <MESSAGE value="- adding the IterativeQueueMergeSort classes which are part of exercise four" />
     <MESSAGE value="- implemented heap sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="- implemented heap sort" />
+    <MESSAGE value="- moved SortingTest to the algorithms package" />
+    <MESSAGE value="- implemented CountingSort" />
+    <MESSAGE value="- moved some methods to a new Util class &quot;AlgorithmUtil&quot;" />
+    <MESSAGE value="- added some comments" />
+    <MESSAGE value="- fixed typo" />
+    <MESSAGE value="- implemented radixSort" />
+    <MESSAGE value="- implemented sortStrings() for sorting strings using radix sort" />
+    <MESSAGE value="- added a comment" />
+    <MESSAGE value="- fixed a bug in quickSelect" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fixed a bug in quickSelect" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>(i / pot) % 10</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>c[ ((int)((i % Math.pow(10, k)) / Math.pow(10, k - 1))) ] - 1</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>Arrays.copyOfRange(a, 1, 2)</expression-string>
         <language-id>JAVA</language-id>
@@ -524,13 +705,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-736">
           <caret line="474" column="32" lean-forward="true" selection-start-line="474" selection-start-column="32" selection-end-line="474" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="4090" column="38" selection-start-line="4090" selection-start-column="38" selection-end-line="4090" selection-end-column="38" />
         </state>
       </provider>
     </entry>
@@ -552,50 +726,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/data_structures/Ring.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
-          <folding>
-            <element signature="docComment;method#Ring#0;class#Ring#0" />
-            <element signature="docComment;method#isEmpty#0;class#Ring#0" />
-            <element signature="docComment;method#isFirst#0;class#Ring#0" />
-            <element signature="docComment;method#getFirst#0;class#Ring#0" />
-            <element signature="docComment;method#getNext#0;class#Ring#0" />
-            <element signature="docComment;method#getSize#0;class#Ring#0" />
-            <element signature="method#getSize#0;class#Ring#0" />
-            <element signature="docComment;method#getItem#0;class#Ring#0" />
-            <element signature="method#getItem#0;class#Ring#0" />
-            <element signature="docComment;method#append#0;class#Ring#0" />
-            <element signature="method#append#0;class#Ring#0" />
-            <element signature="docComment;method#split#0;class#Ring#0" />
-            <element signature="docComment;method#toString#0;class#Ring#0" />
-            <element signature="method#toString#0;class#Ring#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/data_structures/RingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Comparable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="101" column="37" lean-forward="true" selection-start-line="101" selection-start-column="37" selection-end-line="101" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -613,19 +747,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/algorithms/IterativeQueueMergeSortTest.java">
+    <entry file="file://$PROJECT_DIR$/df">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/IterativeQueueMergeSort.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
+        <state relative-caret-position="442">
           <caret line="28" column="34" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -633,10 +767,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="665" column="25" selection-start-line="665" selection-start-column="25" selection-end-line="665" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/StringLatin1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/ComparableTimSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="193" column="23" selection-start-line="193" selection-start-column="23" selection-end-line="193" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="1230" column="83" selection-start-line="1230" selection-start-column="83" selection-end-line="1230" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/AlgorithmUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="109" column="22" lean-forward="true" selection-start-line="109" selection-start-column="22" selection-end-line="109" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/algorithms/IterativeQueueMergeSortTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/algorithms/Searching.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="54" selection-start-line="17" selection-start-column="54" selection-end-line="17" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-9/lib/src.zip!/java.base/java/lang/Comparable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="136" column="15" selection-start-line="136" selection-start-column="15" selection-end-line="136" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/MyHashTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="97" column="29" selection-start-line="97" selection-start-column="29" selection-end-line="97" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/algorithms/Sorting.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="167" column="36" lean-forward="true" selection-start-line="167" selection-start-column="36" selection-end-line="167" selection-end-column="36" />
+        <state relative-caret-position="102">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="24" />
           <folding>
             <element signature="docComment;method#bubbleSort#0;class#Sorting#0" />
             <element signature="method#bubbleSort#0;class#Sorting#0" />
@@ -647,17 +844,94 @@
             <element signature="method#mergeSort#1;class#Sorting#0" />
             <element signature="docComment;method#merge#0;class#Sorting#0" />
             <element signature="method#merge#0;class#Sorting#0" />
+            <element signature="docComment;method#heapSort#0;class#Sorting#0" />
+            <element signature="method#heapSort#0;class#Sorting#0" />
+            <element signature="method#countingSort#0;class#Sorting#0" />
+            <element signature="method#radixSort#0;class#Sorting#0" />
+            <element signature="method#countingSortRadix#0;class#Sorting#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/df">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/algorithms/SortingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="89" column="30" lean-forward="true" selection-start-line="89" selection-start-column="30" selection-end-line="89" selection-end-column="30" />
+        <state relative-caret-position="167">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/algorithms/SearchingTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/Ring.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="149" column="37" lean-forward="true" selection-start-line="149" selection-start-column="37" selection-end-line="149" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data_structures/BinarySearchTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="155" column="7" lean-forward="true" selection-start-line="155" selection-start-column="7" selection-end-line="155" selection-end-column="7" />
+          <folding>
+            <element signature="docComment;class#Node#0;class#BinarySearchTree#0" />
+            <element signature="class#Node#0;class#BinarySearchTree#0" />
+            <element signature="docComment;method#insert#0;class#BinarySearchTree#0" />
+            <element signature="method#insert#0;class#BinarySearchTree#0" />
+            <element signature="docComment;method#search#0;class#BinarySearchTree#0" />
+            <element signature="method#search#0;class#BinarySearchTree#0" />
+            <element signature="docComment;method#getSuccessor#0;class#BinarySearchTree#0" />
+            <element signature="method#getSuccessor#0;class#BinarySearchTree#0" />
+            <element signature="docComment;method#getPredecessor#0;class#BinarySearchTree#0" />
+            <element signature="method#getPredecessor#0;class#BinarySearchTree#0" />
+            <element signature="docComment;method#getMin#0;class#BinarySearchTree#0" />
+            <element signature="e#2772#2773#0" expanded="true" />
+            <element signature="e#2807#2808#0" expanded="true" />
+            <element signature="docComment;method#getMin#1;class#BinarySearchTree#0" />
+            <element signature="method#getMin#1;class#BinarySearchTree#0" />
+            <element signature="docComment;method#getMax#0;class#BinarySearchTree#0" />
+            <element signature="e#3254#3255#0" expanded="true" />
+            <element signature="e#3289#3290#0" expanded="true" />
+            <element signature="docComment;method#getMax#1;class#BinarySearchTree#0" />
+            <element signature="method#getMax#1;class#BinarySearchTree#0" />
+            <element signature="e#3648#3649#0" expanded="true" />
+            <element signature="e#3687#3688#0" expanded="true" />
+            <element signature="method#printPreOrderList#1;class#BinarySearchTree#0" />
+            <element signature="e#3948#3949#0" expanded="true" />
+            <element signature="e#3986#3987#0" expanded="true" />
+            <element signature="method#printInOrderList#1;class#BinarySearchTree#0" />
+            <element signature="e#4246#4247#0" expanded="true" />
+            <element signature="e#4286#4287#0" expanded="true" />
+            <element signature="method#printPostOrderList#1;class#BinarySearchTree#0" />
+            <element signature="docComment;method#size#0;class#BinarySearchTree#0" />
+            <element signature="e#4638#4639#0" expanded="true" />
+            <element signature="e#4670#4671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/data_structures/BinarySearchTreeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="56" column="44" selection-start-line="56" selection-start-column="44" selection-end-line="56" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

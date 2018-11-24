@@ -285,7 +285,7 @@ public class  BinarySearchTree <T extends Comparable>
      * @param x node for which height of subtree is calculated
      * @return the height of the subtree
      */
-    private int height(Node x)
+    private int heightIterative(Node x)
     {
         int maxCount = 0;
         int tmpCount = 0;
@@ -331,6 +331,34 @@ public class  BinarySearchTree <T extends Comparable>
     public int height()
     {
         return height(root);
+    }
+
+    private int height(Node x)
+    {
+        return height(x, 0);
+    }
+
+    private int height(Node n, int h)
+    {
+        int hRight = 0;
+        int hLeft = 0;
+
+        if (n.right != null)
+        {
+            hRight = height(n.right, h + 1);
+        }
+
+        if (n.left != null)
+        {
+            hLeft = height(n.left, h + 1);
+        }
+
+        if (n.right != null || n.left != null)
+        {
+            return ((hLeft > hRight) ? hLeft : hRight);
+        }
+
+        return h;
     }
 
     public void printPreOrderList()

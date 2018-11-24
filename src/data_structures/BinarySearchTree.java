@@ -1,5 +1,8 @@
 package data_structures;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Sebastian Schäffler
  * created at 22.11.2018
@@ -274,6 +277,60 @@ public class  BinarySearchTree <T extends Comparable>
         }
 
         return n.value;
+    }
+
+    /**
+     * calculates the height of the subtree starting at Node x
+     * Assumption: We count the number of edges along this path.
+     * @param x node for which height of subtree is calculated
+     * @return the height of the subtree
+     */
+    private int height(Node x)
+    {
+        int maxCount = 0;
+        int tmpCount = 0;
+        // key = the node, value is the current count at this node
+        Map<Node, Integer> todo = new HashMap<>();
+
+        while (x != null)
+        {
+            // if there is a right node, remember it with the corresponding height
+            if (x.right != null)
+            {
+                todo.put(x.right, tmpCount + 1);
+            }
+
+            // if there is a left node, we just go down the left side
+            if (x.left != null)
+            {
+                tmpCount++;
+                x = x.left;
+            }
+            // else we look if there are still nodes we haven't visited yet
+            else if (!todo.isEmpty())
+            {
+                // getting a node from the todo map
+                x = todo.keySet().iterator().next();
+                tmpCount = todo.get(x);
+                todo.remove(x);
+            }
+            else
+            {
+                x = null;
+            }
+
+            // if our current count is greater than the maxCount we set the maxCount to the current count
+            if (tmpCount > maxCount)
+            {
+                maxCount = tmpCount;
+            }
+        }
+        return maxCount;
+    }
+
+    public int height()
+    {
+        return height(root);
     }
 
     public void printPreOrderList()
